@@ -121,6 +121,7 @@ exists ($$PWD/.git) {
     } else {
         # development version "Development branch:sha date"
         GIT_VERSION = "Development $${GIT_BRANCH}:$${GIT_HASH} $${GIT_TIME}"
+        QMAKE_TARGET_PRODUCT = "QGroundControl Beta"
     }
 
     VERSION      = $$replace(GIT_DESCRIBE, "v", "")
